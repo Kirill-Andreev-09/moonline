@@ -1,6 +1,6 @@
 export enum PagesEnum {
-  home = 'home',
-  result = 'result',
+  HOME = '',
+  MY_BOX = 'mybox',
 }
 
 export enum StepsEnum {
