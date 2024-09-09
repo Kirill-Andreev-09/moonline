@@ -1,8 +1,7 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 
 import { useMutation } from '@tanstack/react-query';
 
-import { CanvasImage } from 'shared/components/canvas-image';
 import { InfoForm } from 'widgets/info-form';
 
 interface Todo {
