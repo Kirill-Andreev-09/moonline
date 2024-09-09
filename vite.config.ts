@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
+    base: '/moonline/',
     plugins: [react(), tsconfigPaths(), mkcert()],
     define: {
       'process.env.CONTACT_EMAIL': JSON.stringify(env.CONTACT_EMAIL),

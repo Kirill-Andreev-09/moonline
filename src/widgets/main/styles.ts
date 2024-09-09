@@ -8,7 +8,7 @@ export const useStyles = createStyles(() => ({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    padding: 0,
+    padding: 32,
     backgroundColor: '#2F4F4F',
   },
 }));

@@ -1,4 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
+
+import { Text } from '@mantine/core';
 
 export const TypingText = ({
   text,
@@ -21,5 +23,9 @@ export const TypingText = ({
     }
   }, [index, text, speed]);
 
-  return <span>{displayedText}</span>;
+  return (
+    <Text fw={500} c="#F0F0E8">
+      {displayedText}
+    </Text>
+  );
 };
