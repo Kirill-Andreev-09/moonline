@@ -1,0 +1,1 @@
+import{j as o}from"./index-hJPAnwvx.js";import{o as s,u as e,t as a}from"./use-stores-u_lfEcSE.js";const d=s(()=>{const{InfoFormStore:r}=e();return console.log("InfoFormStore.data",a(r.data)),o.jsxs("div",{children:[[1,3,4].map(t=>o.jsx("div",{children:t})),";"]})});export{d as default};
