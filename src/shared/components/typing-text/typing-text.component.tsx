@@ -24,7 +24,7 @@ export const TypingText = ({
   }, [index, text, speed]);
 
   return (
-    <Text fw={500} c="#F0F0E8">
+    <Text fw={500} c="#F0F0E8" ta="center">
       {displayedText}
     </Text>
   );

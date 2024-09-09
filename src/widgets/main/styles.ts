@@ -10,5 +10,6 @@ export const useStyles = createStyles(() => ({
     flexDirection: 'column',
     padding: 32,
     backgroundColor: '#2F4F4F',
+    textAlign: 'center',
   },
 }));
