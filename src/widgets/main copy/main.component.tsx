@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Box } from '@mantine/core';
 
-import { PredictionsComponent, TypingText } from 'shared/components';
+import { PredictionsComponent } from 'shared/components';
 import { StepsEnum } from 'shared/types/enums';
 
 import { Start } from './steps/start';

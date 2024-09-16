@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import Cookies from 'js-cookie';
 
-import { PREDICTIONS } from 'shared/constants';
+import { PREDICTIONS } from 'shared/constants/projects';
 
 import { TypingText } from '..';
 
@@ -20,7 +20,6 @@ const getRandomPrediction = () => {
 
 export const PredictionsComponent = () => {
   const [prediction, setPrediction] = useState('');
-  const [cookieUpdated, setCookieUpdated] = useState(false);
 
   useEffect(() => {
     const currentPath = window.location.pathname; // Получаем текущий путь страницы
@@ -41,14 +40,8 @@ export const PredictionsComponent = () => {
       // Обновляем куки
       Cookies.set(`${cookieKey}_prediction`, newPrediction, { expires: 0.25 }); // 0.25 = 6 часов
       Cookies.set(`${cookieKey}_timestamp`, now.toString(), { expires: 0.25 });
-
-      setCookieUpdated(true); // Обновляем состояние для ререндера
     }
   }, []);
 
-  return (
-    <div>
-      <TypingText text={prediction} speed={100} />
-    </div>
-  );
+  return <TypingText text={prediction} speed={100} />;
 };

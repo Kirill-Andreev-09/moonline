@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 
 import { Box } from '@mantine/core';
 
-import { PredictionsComponent, TypingText } from 'shared/components';
+import { PredictionsComponent } from 'shared/components';
 import { useRedirectCheck } from 'shared/hooks';
 import { StepsEnum } from 'shared/types/enums';
 
+import { Result } from './steps/result';
 import { Start } from './steps/start';
 import { useStyles } from './styles';
 
@@ -25,7 +26,7 @@ export const Main = () => {
   return (
     <Box className={classes.root}>
       {step === StepsEnum.start && <Start setStep={setStep} />}
-      {step === StepsEnum.result && <PredictionsComponent />}
+      {step === StepsEnum.result && <Result />}
     </Box>
   );
 };

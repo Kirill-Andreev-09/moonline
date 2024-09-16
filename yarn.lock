@@ -287,6 +287,15 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@babel/template@7.25.0":
+  version "7.25.0"
+  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.25.0.tgz#e733dc3134b4fede528c15bc95e89cb98c52592a"
+  integrity sha512-aOOgh1/5XzKvg1jvVz7AVrx2piJ2XBi227DHmbY6y+bM9H2FlN+IfecYu4Xl0cNiiVejlsCri89LUsbj8vJD9Q==
+  dependencies:
+    "@babel/code-frame" "^7.24.7"
+    "@babel/parser" "^7.25.0"
+    "@babel/types" "^7.25.0"
+
 "@babel/template@^7.22.15":
   version "7.22.15"
   resolved "https://registry.npmjs.org/@babel/template/-/template-7.22.15.tgz"
@@ -304,15 +313,6 @@
     "@babel/code-frame" "^7.24.7"
     "@babel/parser" "^7.24.7"
     "@babel/types" "^7.24.7"
-
-"@babel/template@^7.25.0":
-  version "7.25.0"
-  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.25.0.tgz#e733dc3134b4fede528c15bc95e89cb98c52592a"
-  integrity sha512-aOOgh1/5XzKvg1jvVz7AVrx2piJ2XBi227DHmbY6y+bM9H2FlN+IfecYu4Xl0cNiiVejlsCri89LUsbj8vJD9Q==
-  dependencies:
-    "@babel/code-frame" "^7.24.7"
-    "@babel/parser" "^7.25.0"
-    "@babel/types" "^7.25.0"
 
 "@babel/traverse@7.23.2":
   version "7.23.2"
@@ -1085,10 +1085,17 @@
   resolved "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.9.4.tgz"
   integrity sha512-LfdGXCV9rdEify1oxlN9eamvDSjv9md9ZVMAbNHA87xqIfFCxImxan9qZ8+Un54iK2nnqPlbnSi4R54ONtbWBw==
 
-"@tabler/icons@1.117.0":
-  version "1.117.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.117.0.tgz#2ffafca94f868940cf84a839e284c243e095c45a"
-  integrity sha512-4UGF8fMcROiy++CCNlzTz6p22rxFQD/fAMfaw/8Uanopl41X2SCZTmpnotS3C6Qdrk99m8eMZySa5w1y99gFqQ==
+"@tabler/icons-react@^3.17.0":
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.17.0.tgz#badafce6618f6b8104262538e3f55d34d09c2e29"
+  integrity sha512-Ndm9Htv7KpIU1PYYrzs5EMhyA3aZGcgaxUp9Q1XOxcRZ+I0X+Ub2WS5f4bkRyDdL1s0++k2T9XRgmg2pG113sw==
+  dependencies:
+    "@tabler/icons" "3.17.0"
+
+"@tabler/icons@3.17.0":
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.17.0.tgz#329ca3e4cb533c5a6a61467fe5d6de14a0813020"
+  integrity sha512-sCSfAQ0w93KSnSL7tS08n73CdIKpuHP8foeLMWgDKiZaCs8ZE//N3ytazCk651ZtruTtByI3b+ZDj7nRf+hHvA==
 
 "@tanstack/query-core@5.45.0":
   version "5.45.0"
@@ -1102,7 +1109,7 @@
   dependencies:
     "@tanstack/query-core" "5.45.0"
 
-"@trivago/prettier-plugin-sort-imports@^4.3.0":
+"@trivago/prettier-plugin-sort-imports@4.3.0":
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-4.3.0.tgz#725f411646b3942193a37041c84e0b2116339789"
   integrity sha512-r3n0onD3BTOVUNPhR4lhVK4/pABGpbA7bW3eumZnYdKaHkf1qEC+Mag6DPbGNuuh0eG8AaYj+YqmVHSiGslaTQ==
@@ -1152,7 +1159,7 @@
   resolved "https://registry.npmjs.org/@types/estree/-/estree-1.0.5.tgz"
   integrity sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==
 
-"@types/js-cookie@^3.0.6":
+"@types/js-cookie@3.0.6":
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-3.0.6.tgz#a04ca19e877687bd449f5ad37d33b104b71fdf95"
   integrity sha512-wkw9yd1kEXOPnvEeEV1Go1MmxtBJL0RR79aOTAApecWFVu7w0NNXNqhcWgvw2YgZDYadliXkl14pa3WXw5jlCQ==
@@ -1624,6 +1631,11 @@ chalk@^4.0.0:
     readdirp "~3.6.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+classnames@2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
+  integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
 
 cli-cursor@^4.0.0:
   version "4.0.0"
@@ -2839,7 +2851,7 @@ javascript-natural-sort@0.7.1:
   resolved "https://registry.yarnpkg.com/javascript-natural-sort/-/javascript-natural-sort-0.7.1.tgz#f9e2303d4507f6d74355a73664d1440fb5a0ef59"
   integrity sha512-nO6jcEfZWQXDhOiBtG2KvKyEptz7RVbpGP4vTD2hLBdmNQSsCiicO2Ioinv6UI4y9ukqnBpy+XZ9H6uLNgJTlw==
 
-js-cookie@^3.0.5:
+js-cookie@3.0.5:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.5.tgz#0b7e2fd0c01552c58ba86e0841f94dc2557dcdbc"
   integrity sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==
